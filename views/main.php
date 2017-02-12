@@ -13,7 +13,7 @@
 	<title>Задание</title>
 
 </head>
-<body>
+<body id = "#body_main">
 	<div id="main">
 		<div id = "sidebar">
 			<?php include "log_in.php";?>

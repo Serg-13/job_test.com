@@ -63,7 +63,7 @@
 	width: 1000px;
 	min-height: 900px;
 }
-body{
+#body_main{
 	background:  url(../img/ayta.jpg);
 }
 .but{
