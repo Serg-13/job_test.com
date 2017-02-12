@@ -2,6 +2,8 @@
 	
 	$jawsdb_url = getenv("JAWSDB_URL");
 
+echo $jawsdb_url;
+
 	if ($jawsdb_url) {
 		$list = parse_url($jawsdb_url);
 
