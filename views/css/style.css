@@ -1,3 +1,8 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
 .reg-check,
 .reg-cross,
 .reg-loader{
@@ -5,9 +10,12 @@
 	width: 16px;
 	height: 16px;
 }
-.reg-check{background: url(../img/check.png);}
-.reg-cross{background: url(../img/cross.png);}
-.reg-loader{background: url(../img/loader2.gif);}
+.reg-check{background: url(../img/check.png);
+}
+.reg-cross{background: url(../img/cross.png);
+}
+.reg-loader{background: url(../img/loader2.gif);
+}
 
 #errors{
 	color: #7F5354;
@@ -29,4 +37,61 @@
 }
 .b_lock{
 	display: block;
+}
+
+#sidebar{
+	float: left;
+	width: 230px;
+	border: gray solid 2px;
+	padding: 10px;
+	border-radius: 15px;s
+}
+#content{
+	margin-left: 12px; 
+	float: left;
+	width: 750px;
+	min-height: 800px;
+	border: grey solid 2px;
+	padding: 5px;
+	border-radius: 15px;
+}
+#main{
+	margin: 20px auto;
+	width: 1000px;
+	min-height: 900px;
+}
+.but{
+  border: 1px groove rgba(55, 130, 136, 1);
+  display: inline-table;
+  background: rgba(224, 222, 224, 1);
+  margin: 0 2px;
+}
+.but>a{
+  min-width: 100px;
+  text-align: center;
+  padding: 18px 8px;
+  color: #fff;
+  font-size: 18px;
+  font-family: Times New Roman;
+  margin: 0px;
+}
+.but>a{
+  text-decoration: none;
+}
+.but:hover{
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+  background: rgba(215, 215, 215, 0.4);
+}
+.tok{
+	padding: 10px;
+	margin: 10px;
+	width: 735px;
+	border-radius: 10px;
+	border: #2C58B1 dashed 1px;
+}
+#rew{
+	margin-right: 0; 
+	margin-left: 0;
 }

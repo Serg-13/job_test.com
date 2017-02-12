@@ -26,17 +26,23 @@
 		
 		<div class="error"><?=$_SESSION['auth']['errors']?></div>
 		
-		<?php unset($_SESSION['auth'])?>
+	<?php unset($_SESSION['auth'])?>
 	
 	<?php endif; ?>
 	
 	<?php else: ?>
 			
-		<p>Добро пожаловать, <b><?=htmlspecialchars($_SESSION['cookie']['name'])?></b></p>
-		<p><a href='/logout'>Выход</a></p>
-
-		<?php unset($_SESSION['cookie'])?>
+		<h4>Добро пожаловать,</h4>
+		<p><b><?=htmlspecialchars($_SESSION['cookie']['name'])?></b></p>
+		<p class = 'but'><a href='/logout'>Выход</a></p>
 	
 	<?php endif; ?>
 
 </div> 
+<div id = "menu">
+
+	<p class = 'but'><a href = "/" >Главная</a></p>
+
+	<p class = 'but'><a href = "/add_task" >Добавить задание</a></p>
+
+</div>

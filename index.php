@@ -1,7 +1,9 @@
 <?php
 	
 	include 'config.php';
+	
 	error_reporting(E_ALL^E_NOTICE);
+	
 	session_start();
 
 	$routes = array(
@@ -10,7 +12,8 @@
 		array('url' => '#^log_in#', 'view' => 'log_in'),
 		array('url' => '#^add_task#', 'view' => 'add_task'),
 		array('url' => '#^edit/#', 'view' => 'edit'),
-		array('url' => '#^save_del/#', 'view' => 'save'),
+		array('url' => '#^save_or_del/#', 'view' => 'save_or_del'),
+		array('url' => '#^done/#', 'view' => 'yes_or_no_ done'),
 		array('url' => '#^reg#', 'view' => 'reg')
 	);
 

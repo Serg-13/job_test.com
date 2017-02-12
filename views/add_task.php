@@ -1,4 +1,3 @@
-
 <div id="status" class = "no_ne" >
 	<p class = "text"></p>
 	<input type='button' class = "edit" value='Вернутся к редактору'>
@@ -23,8 +22,7 @@
 
 
 <div id="load"></div>
+
 <script src="/views/js/jquery-3.1.1.min.js"></script>
 <script src="/views/js/script_file.js"></script>	
-<script>
 
-</script>
