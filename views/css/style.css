@@ -44,21 +44,27 @@
 	width: 230px;
 	border: gray solid 2px;
 	padding: 10px;
-	border-radius: 15px;s
+	border-radius: 15px;
+	background: rgba(39, 40, 34, 1);
+	color: #fff;
 }
 #content{
 	margin-left: 12px; 
 	float: left;
 	width: 750px;
-	min-height: 800px;
+	min-height: 600px;
 	border: grey solid 2px;
 	padding: 5px;
 	border-radius: 15px;
+	background: rgba(39, 40, 34, 1);
 }
 #main{
 	margin: 20px auto;
 	width: 1000px;
 	min-height: 900px;
+}
+body{
+	background:  url(../img/ayta.jpg);
 }
 .but{
   border: 1px groove rgba(55, 130, 136, 1);
@@ -70,7 +76,7 @@
   min-width: 100px;
   text-align: center;
   padding: 18px 8px;
-  color: #fff;
+  color: #000;
   font-size: 18px;
   font-family: Times New Roman;
   margin: 0px;
@@ -90,8 +96,50 @@
 	width: 735px;
 	border-radius: 10px;
 	border: #2C58B1 dashed 1px;
+	background: rgba(255, 255, 255, 1);
 }
 #rew{
 	margin-right: 0; 
 	margin-left: 0;
+}
+.ringt_group{
+	float: right;
+	margin: 15px;
+}
+.size_h3{
+	display: inline-table;
+	margin: 15px 20px 15px 20px;
+	color: #fff;
+}
+#login>p>input{
+	color: #000;
+}
+.form_reg{
+	margin: 40px;
+}
+.form_reg>form>p>label{
+	margin: 5px 0;
+	color: #fff;
+}
+.reg_h3{
+	display: inline-table;
+	width: 100px;
+	margin: 40px 40px 0 40px;
+	color: #fff;
+}
+.img_edit{
+	margin: 10px;
+}
+.tok_edit{
+	padding: 10px;
+	margin: 10px;
+	width: 735px;
+	border-radius: 10px;
+}
+div>label{
+	color: #fff; 
+}
+.but_edit{
+	margin: 5px;
+	float: right;
 }

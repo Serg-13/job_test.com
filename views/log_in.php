@@ -2,7 +2,7 @@
 
 	<?php if($_SESSION['cookie']['errors'] == 'yes'): ?>
 	
-	<form action="/log_in" method="post">
+	<form action="/log_in" method="post" id='login'>
 		
 		<p>
 			<label for="login">Логин:</label>
@@ -14,11 +14,10 @@
 		</p>
 		<p class="submit">
 			<input type="submit" value="Войти" name="log_in">
+			<a href="/reg">Регистрация</a>
 		</p>
 	
 	</form>
-	
-	<p><a href="/reg">Регистрация</a></p>
 	
 	<?php unset($_SESSION['cookie'])?>
 
@@ -37,12 +36,6 @@
 		<p class = 'but'><a href='/logout'>Выход</a></p>
 	
 	<?php endif; ?>
-
-</div> 
-<div id = "menu">
-
-	<p class = 'but'><a href = "/" >Главная</a></p>
-
-	<p class = 'but'><a href = "/add_task" >Добавить задание</a></p>
+		<div class = 'but'><a href = "/" >Главная</a></div>
 
 </div>

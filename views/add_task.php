@@ -1,3 +1,4 @@
+<h3 class = "size_h3">Добавление нового задание:</h3>
 <div id="status" class = "no_ne" >
 	<p class = "text"></p>
 	<input type='button' class = "edit" value='Вернутся к редактору'>

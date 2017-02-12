@@ -1,5 +1,5 @@
 
-		<h3>Регистрация</h3>
+		<h3 class = "reg_h3">Регистрация</h3>
 
 		<?php if(isset($_SESSION['reg']['success'])): ?>
 		
@@ -7,7 +7,7 @@
 		
 		<?php elseif(!isset($_COOKIE['login'])): ?>
 			
-			<div class="form">
+			<div class="form_reg">
 				<form action="/reg" method="post">
 					<p>
 						<label for="name_reg">Имя:</label>
