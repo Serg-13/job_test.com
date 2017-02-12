@@ -1,0 +1,32 @@
+.reg-check,
+.reg-cross,
+.reg-loader{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+}
+.reg-check{background: url(../img/check.png);}
+.reg-cross{background: url(../img/cross.png);}
+.reg-loader{background: url(../img/loader2.gif);}
+
+#errors{
+	color: #7F5354;
+}
+.error{
+	padding: 5px;
+	border: gray dashed 1px;
+	background: #FFEDED;
+	color: #7F5354;
+}
+.ok{
+	padding: 5px;
+	border: 1px solid #ADC092;
+	background: #F0FAF1;
+	color: #58715E;
+}
+.no_ne{
+	display: none;
+}
+.b_lock{
+	display: block;
+}
