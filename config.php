@@ -8,7 +8,7 @@
 		define("DBHOST", $list["host"]);
 		define("DBUSER", $list["user"]);
 		define("DBPASS", $list["pass"]);
-		define("DB", str_replace("/", "", $list["path"]);
+		define("DB", str_replace("/", "", $list["path"]));
 		define("DBPORT", $list["port"]);
 	}
 	else {
