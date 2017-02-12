@@ -19,11 +19,14 @@
 		define("DBPORT", 3306);
 	}
 
-	//$connection = @mysqli_connect(DBHOST, DBUSER, DBPASS, DB, DBPORT) or die("Нет соединения с БД");
-
 	$connection = @mysqli_connect(DBHOST, DBUSER, DBPASS, DB, DBPORT);
 
-	echo mysql_errno($link) . ": " . mysql_error($link). "\n";
+	if (!$connection) {
+	    echo "Ошибка: Невозможно установить соединение с MySQL." . PHP_EOL;
+	    echo "Код ошибки errno: " . mysqli_connect_errno() . PHP_EOL;
+	    echo "Текст ошибки error: " . mysqli_connect_error() . PHP_EOL;
+	    exit;
+	}
 
 	mysqli_set_charset($connection, "utf8") or die ("Не установлена кодировка соединения");
 ?>
