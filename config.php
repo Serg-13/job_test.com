@@ -10,8 +10,6 @@
 		define("DBPASS", $list["pass"]);
 		define("DB", $list["path"]);
 		define("DBPORT", $list["port"]);
-
-		echo "Got it";
 	}
 	else {
 		define("DBHOST", "localhost");
@@ -21,7 +19,11 @@
 		define("DBPORT", 3306);
 	}
 
-	$connection = @mysqli_connect(DBHOST, DBUSER, DBPASS, DB, DBPORT) or die("Нет соединения с БД");
+	//$connection = @mysqli_connect(DBHOST, DBUSER, DBPASS, DB, DBPORT) or die("Нет соединения с БД");
+
+	$connection = @mysqli_connect(DBHOST, DBUSER, DBPASS, DB, DBPORT);
+
+	echo mysql_errno($link) . ": " . mysql_error($link). "\n";
 
 	mysqli_set_charset($connection, "utf8") or die ("Не установлена кодировка соединения");
 ?>
