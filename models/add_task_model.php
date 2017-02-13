@@ -85,7 +85,7 @@
 						VALUES ('$id', '$task', 'no', '$smallimage')";
 		}
 
-		$res = mysqli_query($connection, $query);
+		$res = execute_mysqli_query($connection, $query);
 
 		if (mysqli_affected_rows($connection) > 0) {
 			
