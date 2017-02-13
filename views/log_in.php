@@ -37,5 +37,5 @@
 	
 	<?php endif; ?>
 		<div class = 'but'><a href = "/" >Главная</a></div>
-		<div class = 'but'><a href = "dayside/index.php" >Dayside</a></div>
+		<div class = 'but'><a href = "dayside/" >Dayside</a></div>
 </div>
