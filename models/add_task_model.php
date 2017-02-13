@@ -3,6 +3,7 @@
 	function load_image(){
 		
 		$formats = array("image/jpeg", "image/gif", "image/png");
+		
 		$format = $_FILES['image']['type'];
 
 		if(in_array($format, $formats)){
