@@ -4,8 +4,8 @@
         <title>DaysIDE</title>
         <meta charset="utf-8">
         <? if (isset($_GET['dev'])): ?>
-            <script tea="server/assets/index.tea"></script>
-            <script src="server/assets/teacss/teacss.js"></script>
+            <script tea="dayside/server/assets/index.tea"></script>
+            <script src="dayside/server/assets/teacss/teacss.js"></script>
         <? else: ?>
             <script src="dayside/server/assets/teacss/teacss.js"></script>
             <script src="dayside/server/assets/teacss/teacss-ui.js"></script>
