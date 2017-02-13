@@ -57,7 +57,11 @@
 
 	    imagedestroy($dest_img); 
 	    imagedestroy($src_img); 
-	    return true;          
+
+	    unlink($filename);
+
+	    return true;
+	         
  	}  
 
  	function add_task($smallimage){

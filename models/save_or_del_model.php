@@ -4,7 +4,7 @@
 
 		global $connection;
 
-		$id = $_SESSION['edit']['id'];
+		$id = $_POST['save'];
 		
 		$task = $_POST['task'];
 
@@ -20,13 +20,21 @@
 
 		global $connection;
 
-		$id = $_SESSION['edit']['id'];
+		$id = $_POST['del'];
+
+		$query = "SELECT name_image FROM tasks WHERE id = '$id'";
+
+		$res = mysqli_query($connection, $query);
+
+		print_r($row = mysqli_fetch_assoc($res));
+
+		unlink('views/img/task_img/'.$row['name_image']);
 
 		$query = "DELETE FROM tasks WHERE id='$id'";
 
 		$res = mysqli_query($connection, $query);
 
-		$id = $_SESSION['edit']['success'] = 'Задание удалено';
+		$_SESSION['edit']['success'] = 'Задание удалено';
 
 	}
 ?>

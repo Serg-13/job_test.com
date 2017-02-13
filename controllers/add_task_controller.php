@@ -17,10 +17,12 @@
 
 			if($_SESSION['load']['error'] == 'no'){
 				
+				print_r($_SESSION['load']['name']);
+				
 				$smallimage = 'small_'.time().'_'.$_FILES['image']['name'];
 				resizeimg($_SESSION['load']['name'], $smallimage, 320 , 240);
 				add_task($smallimage);
-				redirect();
+				//redirect();
 			}
 		}
 		include 'views/main.php';

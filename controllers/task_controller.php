@@ -4,7 +4,8 @@
 
 	include "models/{$view}_model.php";
 
-	conclusion_task();
-
+		$tasks = conclusion_task();
+	
 	include "views/main.php";
+
 ?>

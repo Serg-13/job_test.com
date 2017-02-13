@@ -31,12 +31,12 @@ $(function(){
 	$(".test").click(function(){
 		var val = $("#area").val();
 		$('#status').removeClass('no_ne').addClass('b_lock');
-		$('.task').removeClass('b_lock').addClass('no_ne');
+		$('.add_task').removeClass('b_lock').addClass('no_ne');
 		$('.text').text(val);
 	});
 	$(".edit").click(function(){
 		$('#status').removeClass('b_lock').addClass('no_ne');
-		$('.task').removeClass('no_ne').addClass('b_lock');
+		$('.add_task').removeClass('no_ne').addClass('b_lock');
 	});
 
 }) 

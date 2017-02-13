@@ -98,7 +98,7 @@
 	border: #2C58B1 dashed 1px;
 	background: rgba(255, 255, 255, 1);
 }
-#rew{
+#rew, #status{
 	margin-right: 0; 
 	margin-left: 0;
 }
@@ -142,4 +142,21 @@ div>label{
 .but_edit{
 	margin: 5px;
 	float: right;
+}
+.add_task{
+	margin: 20px;
+}
+.add_task>p>b{
+	color: #fff;
+}
+#img_add_task{
+	width: 320px;
+	height: 240px;
+	border: 2px groove rgba(55, 130, 136, 1);
+}
+#sort{
+	color: #000;
+}
+.form_sort{
+	display: inline-table;
 }

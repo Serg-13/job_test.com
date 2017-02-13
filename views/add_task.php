@@ -1,14 +1,19 @@
 <h3 class = "size_h3">Добавление нового задание:</h3>
-<div id="status" class = "no_ne" >
-	<p class = "text"></p>
-	<input type='button' class = "edit" value='Вернутся к редактору'>
+<div id="status" class = "no_ne tok  row" >
+	<div class = 'col-md-6' >
+		<p id = 'img_add_task'>Здесь будет находиться ваша картинка!!!<p>
+	</div>
+	<div class = 'col-md-6'>
+		<p class = "text"></p>
+		<input type='button' class = "edit" value='Вернутся к редактору'>
+	</div>
 </div>
 
-<form method = 'post' action = "/add_task"  class = 'task' enctype="multipart/form-data" id = "form">
+<form method = 'post' action = "/add_task"  class = 'add_task b_lock' enctype="multipart/form-data" id = "form">
   
-  <p><b>Введите задание</b></p>
+  <p><b>Введите задание: </b></p>
   
-  <p><textarea id="area" name="area" style="height:50px; width:500px;">Опишите ваше задание!!!</textarea></p>
+  <p><textarea id="area" name="area" style="height:150px; width:600px;">Опишите ваше задание!!!</textarea></p>
 
   <input type='file' name = 'image' value='Добавить изображение'>
   <input type='button' class = "test" value='Предварительный просмотер'>
