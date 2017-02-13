@@ -41,7 +41,7 @@
 	    else 
 	    { 
 	     	$w = $h*$src_ratio; 
-	    } 
+	    }
 
 	    $dest_img = imagecreatetruecolor($w, $h);   
 	    $white = imagecolorallocate($dest_img, 255, 255, 255);        
