@@ -32,7 +32,7 @@
 		}
 		else{
 
-			$query = "SELECT login, hash, access, name FROM usrs 
+			$query = "SELECT login, hash, access, name FROM users 
 						WHERE logn = '$login' AND hash = '$hash'
 						Limit 1";
 			
