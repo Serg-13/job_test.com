@@ -33,7 +33,7 @@
 		else{
 
 			$query = "SELECT login, hash, access, name FROM users 
-						WHERE logn = '$login' AND hash = '$hash'
+						WHERE login = '$login' AND hash = '$hash'
 						Limit 1";
 			
 			$res = execute_mysqli_query($connection, $query);
