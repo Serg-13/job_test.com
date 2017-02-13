@@ -74,7 +74,7 @@
 
  		$query =  "SELECT id FROM users WHERE login = '$login'";
 
- 		$res = mysqli_query($connection, $query);
+ 		$res = execute_mysqli_query($connection, $query);
 
  		$row = mysqli_fetch_assoc($res);
  		

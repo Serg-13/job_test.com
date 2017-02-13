@@ -23,7 +23,7 @@
 		if(!isset($_POST['sort']) or $_POST['sort'] == 't1'){
 			$query = "SELECT tasks.*, users.name, users.email FROM tasks, users WHERE tasks.id_user = users.id";
 		}
-		$res = mysqli_query($connection, $query);
+		$res = execute_mysqli_query($connection, $query);
 		
 		$tasks_info = array();
 

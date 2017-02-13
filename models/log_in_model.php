@@ -16,7 +16,7 @@
 						WHERE login = '$login' AND password = '$password'
 						Limit 1";
 			
-			$res = mysqli_query($connection, $query);
+			$res = execute_mysqli_query($connection, $query);
 
 			if(mysqli_num_rows($res) == 1){
 				

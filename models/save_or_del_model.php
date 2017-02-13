@@ -10,7 +10,7 @@
 
 		$query = "UPDATE tasks SET task = '$task' WHERE id = '$id'";
 
-		$res = mysqli_query($connection, $query);
+		$res = execute_mysqli_query($connection, $query);
 
 		$id = $_SESSION['edit']['success'] = 'Задание обновлено';
 
@@ -32,7 +32,7 @@
 
 		$query = "DELETE FROM tasks WHERE id='$id'";
 
-		$res = mysqli_query($connection, $query);
+		$res = execute_mysqli_query($connection, $query);
 
 		$_SESSION['edit']['success'] = 'Задание удалено';
 

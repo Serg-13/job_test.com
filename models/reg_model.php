@@ -14,7 +14,7 @@
 
 		$query = "SELECT id FROM users WHERE $field = '$val'";
 		
-		$res = mysqli_query($connection, $query);
+		$res = execute_mysqli_query($connection, $query);
 
 		if(mysqli_num_rows($res) > 0){
 			return "no"; 
@@ -51,8 +51,8 @@
 		$email = mysqli_real_escape_string($connection, $email);
 
 		$query =  "SELECT login, email FROM users WHERE login = '$login' OR email = '$email'";
-		
-		$res = mysqli_query($connection, $query);
+
+		$res = execute_mysqli_query($connection, $query);
 
 		if(mysqli_num_rows($res) > 0){
 			 
@@ -85,6 +85,8 @@
 		
 		$res = mysqli_query($connection, $query);
 
+		$res = execute_mysqli_query($connection, $query);
+
 		if (mysqli_affected_rows($connection) > 0) {
 			
 			$_SESSION['reg']['success'] = "Регистрация прошла успешно";
@@ -93,5 +95,6 @@
 			setcookie("hash", $hash, time()+3600*24*14);
 		}
 	}
+
 
 ?>

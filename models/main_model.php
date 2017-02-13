@@ -7,6 +7,19 @@
 			exit;
 	}
 
+	function execute_mysqli_query($connection, $query){  
+  		
+  		$res = mysqli_query($connection, $query);
+
+  		if (!$res) { 
+    		print_r(mysqli_error($connection));
+    		exit();  
+  		}
+  		else{
+  			return $res;
+  		} 
+	}
+	
 	function inspection_cookie(){
 		
 		global $connection;
@@ -19,11 +32,11 @@
 		}
 		else{
 
-			$query = "SELECT login, hash, access, name FROM users 
-						WHERE login = '$login' AND hash = '$hash'
+			$query = "SELECT login, hash, access, name FROM usrs 
+						WHERE logn = '$login' AND hash = '$hash'
 						Limit 1";
 			
-			$res = mysqli_query($connection, $query);
+			$res = execute_mysqli_query($connection, $query)
 
 			if(mysqli_num_rows($res) == 1){
 				

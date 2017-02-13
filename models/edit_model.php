@@ -13,7 +13,7 @@
 
 		$query = "SELECT tasks.*, users.name FROM tasks, users WHERE tasks.id_user = users.id AND tasks.id = '$id'";
 
-		$res = mysqli_query($connection, $query);
+		$res = execute_mysqli_query($connection, $query);
 
 		return $row = mysqli_fetch_assoc($res);
 		}

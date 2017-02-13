@@ -8,7 +8,7 @@
 
 		$query = "UPDATE tasks SET status = 'yes' WHERE id = '$id'";
 
-		$res = mysqli_query($connection, $query);
+		$res = execute_mysqli_query($connection, $query);
 	}
 	function no_done_task(){
 
@@ -18,7 +18,7 @@
 
 		$query = "UPDATE tasks SET status = 'no' WHERE id = '$id'";
 
-		$res = mysqli_query($connection, $query);
+		$res = execute_mysqli_query($connection, $query);
 	}
 
 ?>
