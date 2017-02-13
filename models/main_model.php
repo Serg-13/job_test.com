@@ -19,7 +19,7 @@
   			return $res;
   		} 
 	}
-	
+
 	function inspection_cookie(){
 		
 		global $connection;
@@ -36,7 +36,7 @@
 						WHERE logn = '$login' AND hash = '$hash'
 						Limit 1";
 			
-			$res = execute_mysqli_query($connection, $query)
+			$res = execute_mysqli_query($connection, $query);
 
 			if(mysqli_num_rows($res) == 1){
 				
