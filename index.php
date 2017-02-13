@@ -14,6 +14,7 @@
 		array('url' => '#^edit/#', 'view' => 'edit'),
 		array('url' => '#^save_or_del/#', 'view' => 'save_or_del'),
 		array('url' => '#^done/#', 'view' => 'yes_or_no_ done'),
+		array('url' => '#^dayside#', 'view' => 'dayside'),
 		array('url' => '#^reg#', 'view' => 'reg')
 	);
 
@@ -30,6 +31,10 @@
 		include 'views/404.php';
 		exit;
 	}
-	
-	include "controllers/{$view}_controller.php";
+	if($view == 'dayside'){
+		include 'dayside/index.php';
+	}
+	else{
+		include "controllers/{$view}_controller.php";
+	}
 ?>
