@@ -32,7 +32,7 @@
 		exit;
 	}
 	if($view == 'dayside'){
-		require 'dayside/index.php';
+		include './dayside/index.php';
 	}
 	else{
 		include "controllers/{$view}_controller.php";
