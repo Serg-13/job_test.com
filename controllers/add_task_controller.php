@@ -11,7 +11,7 @@
 	}
 	
 	else{
-		if(isset($_POST) AND $_SERVER['REQUEST_METHOD'] == "POST"){
+		if(isset($_POST['submit'])){
 			
 			load_image();
 
