@@ -11,21 +11,21 @@
 				<form action="/reg" method="post">
 					<p>
 						<label for="name_reg">Имя:</label>
-						<input type="text" name="name_reg" id="name_reg">
+						<input type="text" name="name_reg" id="name_reg" required>
 					</p>
 					<p>
 						<label for="email_reg">Email:</label>
-						<input class="access" type="text" data-field="email" name="email_reg" id="email_reg">
+						<input class="access" type="text" data-field="email" name="email_reg" id="email_reg" required>
 						<span></span>
 					</p>
 					<p>
 						<label for="login_reg">Логин:</label>
-						<input class="access" type="text" data-field="login" name="login_reg" id="login_reg">
+						<input class="access" type="text" data-field="login" name="login_reg" id="login_reg" required>
 						<span></span>
 					</p>
 					<p>
 						<label for="password_reg">Пароль:</label>
-						<input type="password" name="password_reg" id="password_reg">
+						<input type="password" name="password_reg" id="password_reg" required>
 					</p>
 					<p class="submit">
 						<input type="submit" value="Зарегистрироваться" name="reg">

@@ -11,6 +11,7 @@
 	}
 	
 	else{
+		
 		if(isset($_POST['submit'])){
 			
 			load_image();

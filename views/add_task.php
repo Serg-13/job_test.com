@@ -15,9 +15,9 @@
   
   <p><textarea id="area" name="area" style="height:150px; width:600px;">Опишите ваше задание!!!</textarea></p>
 
-  <input type='file' name = 'image' value='Добавить изображение'>
+  <input type='file' name = 'image' value='Добавить изображение' required>
   <input type='button' class = "test" value='Предварительный просмотер'>
-  <input type='submit' class = "sub" value='Добавить'>
+  <input type='submit' name='submit' class = "sub" value='Добавить'>
   
 </form>
 
